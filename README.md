@@ -1,2 +1,2 @@
 # BLOGPOST
- This ia an app to read and publish blogs.
+It is my first big project. This ia an app to read and publish blogs.
