@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+:root {
+    --primary-color: black;
+    --secondary-color: #FFD700;
+    --hover-color: #444950;
+    font-family: 'Noto Serif', serif;
+}
+
+.nav-header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-bottom-left-radius: 1rem;
+}
+
+.nav-heading {
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 0px 0px 1rem 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: inline;
+}
+
+.nav-links i {
+    color: var(--secondary-color);
+    font-size: large;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+}
+
+.nav-links i:hover {
+    background-color: var(--hover-color);
+}
+
+.nav-icons {
+    text-align: right;
+    padding: 1rem;
+    display: inline-block;
+}
+
+.heading-comtainer {
+    display: inline-block;
+}
+
+@media screen and (max-width: 800px){
+    .nav-icons {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        text-align: center;
+    }
+    .nav-links i:hover {
+        padding: 1rem 45%;
+    }
+}
