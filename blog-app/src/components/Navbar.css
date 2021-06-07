@@ -81,21 +81,30 @@
     margin-right: 0.5rem;
 }
 
-@media screen and (max-width: 500px) {
-    .header__left {
-        margin-inline-start: 1rem;
-    }
+.header__lists:hover {
+    background-color: var(--third-color);
+    border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 700px) {
 
     .header {
         display: flex;
         flex-direction: column;
+        box-shadow: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.75);
     }
 
+    .header__left {
+        margin-inline-start: 1rem;
+    }
     .header__right {
-        background-color: var(--third-color);
+        text-align: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.75);
     }
 
-    .header__icontable{
+    .header__icontable {
+        margin: 0px;
         padding: 0px;
     }
 }
