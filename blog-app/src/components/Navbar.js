@@ -8,14 +8,9 @@ function Navbar() {
 
     return (
         <header className="nav-header"> 
-            <div className="heading-comtainer">
+            <div className="heading-container">
                 <Link to="/" className="nav-heading">Blog Post.</Link>
             </div>
-                {/* <i className={click ? "fas fa-times" : "fas fa-bar"}></i> */}
-            {/* <div class="">
-                <Link to="/" className="nav-heading"></Link>
-            </div> */}
-
             <div class="list-container">
                 <ul className="nav-icons">
                     <li className="nav-links">
