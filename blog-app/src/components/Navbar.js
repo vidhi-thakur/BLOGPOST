@@ -7,12 +7,12 @@ function Navbar() {
     const onClickHandler = () => setClick(!click);
 
     return (
-        <header className="nav-header"> 
-            <div className="heading-container">
+        <header className="header"> 
+            <div className="header__left">
                 <Link to="/" className="nav-heading">Blog Post.</Link>
             </div>
-            <div class="list-container">
-                <ul className="nav-icons">
+            <div class="header__right">
+                <ul className="header">
                     <li className="nav-links">
                         <Link to="/"><i className="fas fa-home"></i></Link>
                     </li>
