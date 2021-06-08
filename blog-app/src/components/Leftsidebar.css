@@ -1,0 +1,15 @@
+.leftsidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftsidebar__blogContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftsidebar__heading {
+    margin-top: 15vh;
+}

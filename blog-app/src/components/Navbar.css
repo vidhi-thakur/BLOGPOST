@@ -40,6 +40,7 @@
     align-items: center;
     display: flex;
     align-items: center;
+    flex: 1;
 }
 
 .header__input {
@@ -101,6 +102,7 @@
     .header__right {
         text-align: center;
         border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+        justify-content: center;
     }
 
     .header__icontable {
