@@ -1,4 +1,24 @@
 .createBlog {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 700px;
+    margin: 5vh auto 0px auto;
+}
+
+.createBlog__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.createBlog__info {
+    display: flex;
+    flex-direction: row;
+}
+
+.createBlog__userInfo {
+    display: flex;
+    flex-direction: column;
 }
