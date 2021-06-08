@@ -3,6 +3,7 @@ import "./Createblog.css";
 import ClearRoundedIcon from '@material-ui/icons/ClearRounded';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import FontDownloadRoundedIcon from '@material-ui/icons/FontDownloadRounded';
+import SentimentSatisfiedRoundedIcon from '@material-ui/icons/SentimentSatisfiedRounded';
 
 function Createblog() {
     return (
@@ -25,13 +26,14 @@ function Createblog() {
                     <textarea placeholder="Write your blog here..."></textarea>
                     <input placeholder="Add image/gif URL" />
                 </form>
-
             </div>
             <div className="createBlog__icons">
-            <FontDownloadRoundedIcon/ >
+                <FontDownloadRoundedIcon />
+                <SentimentSatisfiedRoundedIcon />
+
             </div>
             <div className="createBlog__button">
-
+                <button>Post</button>
             </div>
         </div>
     )
