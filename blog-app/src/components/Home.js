@@ -1,15 +1,16 @@
 import React from 'react'
-import { Link } from "react-router-dom";
-import "./Home.css"
-import Leftsidebar from "./Leftsidebar.js"
+import "./Home.css";
+import Leftsidebar from "./Leftsidebar.js";
+import Centerfeed from "./Centerfeed.js"
+
 
 function Home() {
     return (
-        <div className="body">
-            {/* sidebar left */}
+        <div className="home">
             < Leftsidebar />
 
             {/* centre feed  */}
+            <Centerfeed />
 
             {/* sidebar right  */}
 

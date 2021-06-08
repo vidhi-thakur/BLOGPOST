@@ -1,6 +1,12 @@
+#publicApp {
+  background-color: #E5E7EB;
+}
+
 .App {
   text-align: center;
 }
+
+
 
 /* @keyframes App-logo-spin {
   from {

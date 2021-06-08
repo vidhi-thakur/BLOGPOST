@@ -21,6 +21,7 @@
 .container__heading {
     margin: 0px;
     padding: 0.5rem;
+    background-color: var(--first-color);
 }
 
 .container__link {
@@ -29,15 +30,18 @@
     color: black;
     text-align: center;
     padding: 0.5rem;
+    background-color: var(--first-color);
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
 } 
 
 .container__link:hover {
     background-color: var(--third-color);
-    border-radius: 0.5em;
 }
 
 .container>img {
     height: 25vh;
     width: 30vh;
-    border-radius: 0.2rem;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
 }

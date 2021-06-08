@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { Link } from "react-router-dom";
 import "./Navbar.css"
 import HomeIcon from '@material-ui/icons/Home';
@@ -8,8 +8,6 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import SearchIcon from '@material-ui/icons/Search';
 
 function Navbar() {
-    const [click, setClick] = useState(false);
-    const onClickHandler = () => setClick(!click);
 
     return (
         <header className="header"> 
