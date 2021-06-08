@@ -10,33 +10,26 @@ function Createblog() {
         <div className="createBlog">
             <div className="createBlog__header">
                 <h2>Create blog</h2>
-                <ClearRoundedIcon />
-                
             </div >
             <div className="createBlog__info">
-                <AccountCircleIcon />
+                <AccountCircleIcon className="createBlogInfo--icon" />
                 <div className="createBlog__userInfo">
                     <h4>Name</h4>
-                    <button></button>
+                    <button>Blog type</button>
                 </div>
                 
             </div>
-            <div className="createBlog__input">
-                <form>
-                    <textarea placeholder="Write your blog here..."></textarea>
-                    <input placeholder="Add image/gif URL" />
+            <div>
+                <form className="createBlog__input">
+                    <textarea className="input--blog" placeholder="Write your blog here..." required></textarea>
+                    <div className="createBlog__button">
+                        <input placeholder="Add image URL (optional)" />
+                        <button className="button--input" type="submit">Post</button>
+                    </div>
                 </form>
-            </div>
-            <div className="createBlog__icons">
-                <FontDownloadRoundedIcon />
-                <SentimentSatisfiedRoundedIcon />
-
-            </div>
-            <div className="createBlog__button">
-                <button>Post</button>
             </div>
         </div>
     )
 }
 
-export default Createblog
+export default Createblog;
