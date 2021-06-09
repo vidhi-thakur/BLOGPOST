@@ -1,8 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./Createblog.css";
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 function Createblog({image, title}) {
+
+    const [input, setInput] = useState("");
+    const [imageUrl, setImageUrl] = useState("");
+
+    const handleOnClick = (event) => {
+        event.preventDefault();
+
+        setImageUrl("")
+        setInput("")
+    }
 
     return (
         <div className="createBlog">
@@ -19,10 +29,10 @@ function Createblog({image, title}) {
             </div>
             <div>
                 <form className="createBlog__input">
-                    <textarea className="input--blog" placeholder="Write your blog here..." required></textarea>
+                    <textarea onClick={(e) => setInput(e.target.value)} className="input--blog" placeholder="Write your blog here..." required></textarea>
                     <div className="createBlog__button">
-                        <input placeholder="Add image URL (optional)" />
-                        <button className="button--input" type="submit">Post</button>
+                        <input onClick={(e) => setImageUrl(e.target.value)} placeholder="Add image URL (optional)" />
+                        <button onClick={handleOnClick} className="button--input" type="submit">Post</button>
                     </div>
                 </form>
             </div>
