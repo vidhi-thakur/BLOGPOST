@@ -3,11 +3,16 @@ import Navbar from "./components/Navbar.js";
 import Home from "./components/Home.js"
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import Createblog from "./components/Createblog.js"
+import Createblog from "./components/Createblog.js";
+import Login from "./components/Login.js";
 
 function App() {
+    const user = "vidhi";
   return (
     <>
+
+{
+        user?(<>
             <Router>
                 <Navbar />
                 <Switch>
@@ -28,6 +33,10 @@ function App() {
                     </Route>
                 </Switch>
             </Router>
+        </>):(<Login />)
+    }
+
+            
         
         </>
   );
