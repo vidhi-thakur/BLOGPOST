@@ -2,6 +2,7 @@ import React from 'react'
 import "./Home.css";
 import Leftsidebar from "./Leftsidebar.js";
 import Centerfeed from "./Centerfeed.js"
+import Rightsidebar from "./Rightsidebar.js"
 
 
 function Home() {
@@ -9,11 +10,9 @@ function Home() {
         <div className="home">
             < Leftsidebar />
 
-            {/* centre feed  */}
             <Centerfeed />
-
-            {/* sidebar right  */}
-
+            
+            <Rightsidebar />
         </div>
     );
 }

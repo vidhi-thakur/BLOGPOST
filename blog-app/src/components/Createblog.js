@@ -1,20 +1,18 @@
 import React from 'react';
 import "./Createblog.css";
-import ClearRoundedIcon from '@material-ui/icons/ClearRounded';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-import FontDownloadRoundedIcon from '@material-ui/icons/FontDownloadRounded';
-import SentimentSatisfiedRoundedIcon from '@material-ui/icons/SentimentSatisfiedRounded';
 
-function Createblog() {
+function Createblog({image, title}) {
+
     return (
         <div className="createBlog">
             <div className="createBlog__header">
                 <h2>Create blog</h2>
             </div >
             <div className="createBlog__info">
-                <AccountCircleIcon className="createBlogInfo--icon" />
+                <AccountCircleIcon src={image} className="createBlogInfo--icon" />
                 <div className="createBlog__userInfo">
-                    <h4>Name</h4>
+                    <h4>{!title?"Guest":title}</h4>
                     <button>Blog type</button>
                 </div>
                 

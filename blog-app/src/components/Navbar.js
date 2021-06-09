@@ -6,8 +6,11 @@ import CategoryIcon from '@material-ui/icons/Category';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import SearchIcon from '@material-ui/icons/Search';
+// import { useStateValue } from '../StateProvider';
 
 function Navbar() {
+
+    // const [ {user}, dispatch] = useStateValue();
 
     return (
         <header className="header"> 
