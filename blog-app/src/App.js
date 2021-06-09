@@ -5,9 +5,11 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Createblog from "./components/Createblog.js";
 import Login from "./components/Login.js";
+import { useStateValue } from './StateProvider';
 
 function App() {
-    const user = "vidhi";
+    const [{user}, dispatch] = useStateValue();
+
   return (
     <>
 
