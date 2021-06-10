@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import "./Createblog.css";
 import { Avatar } from '@material-ui/core';
+import firebase from "../firebase"
 
 function Createblog({profilePic, name}) {
 
@@ -10,6 +11,9 @@ function Createblog({profilePic, name}) {
 
     const handleOnClick = (event) => {
         event.preventDefault();
+
+        //clever db stuff
+        const timestamp = firebase.firestore.FieldValue.serverTimestamp();
 
         setImageUrl("")
         setInput1("")
@@ -30,7 +34,7 @@ function Createblog({profilePic, name}) {
             </div>
             <div>
                 <form className="createBlog__input">
-                    <input onClick={(e) => setInput2(e.target.value)} placeholder="Enter title" />
+                    <input onClick={(e) => setInput2(e.target.value)} placeholder="Enter title" required />
                     <textarea onClick={(e) => setInput1(e.target.value)} className="input--blog" placeholder="Write your blog here..." required></textarea>
                     <div className="createBlog__button">
                         <input onClick={(e) => setImageUrl(e.target.value)} placeholder="Add image URL (optional)" />

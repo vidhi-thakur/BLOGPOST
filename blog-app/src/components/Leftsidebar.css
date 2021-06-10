@@ -1,14 +1,10 @@
-.leftsidebar {
+.display {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
+    flex-direction: column;    
 }
 
-.leftsidebar__blogContainer {
-    display: flex;
-    flex-direction: column;
+.leftsidebar {
+    position: sticky;
 }
 
 .leftsidebar__heading {

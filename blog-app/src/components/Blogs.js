@@ -9,7 +9,7 @@ function Blogs({profilePic, img, name, timestamp, title, input}) {
                 <Avatar src={profilePic} className="blog__userImage" />
                 <div className="blog__userName">
                     <h4 className="marginClass userName">{!name?"Guest":name}</h4>
-                    <h4 className="marginClass blog__timestamp">{timestamp}</h4>
+                    <h4 className="marginClass blog__timestamp">{new Date(timestamp?.toDate()).toUTCString()}</h4>
                 </div>
             </div>
             <div className="blog__userInput">
