@@ -4,7 +4,6 @@ import "./Navbar.css"
 import HomeIcon from '@material-ui/icons/Home';
 import CategoryIcon from '@material-ui/icons/Category';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import SearchIcon from '@material-ui/icons/Search';
 import { Avatar } from '@material-ui/core';
 import { useStateValue } from '../StateProvider';
@@ -22,7 +21,7 @@ function Navbar() {
                     <input className="header__input" type="text" />
                 </div>
             </div>
-            <div class="header__right">
+            <div className="header__right">
                 <ul className="header__icontable">
                     <li className="header__lists">
                         <Link to="/"><HomeIcon className="header__icons" /></Link>
