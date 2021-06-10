@@ -1,0 +1,40 @@
+.blog {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--first-color);
+    width: 700px;
+    margin: 1rem auto;
+    box-shadow: 0px 7px 5px -7px rgba(0, 0, 0, 0.75);
+}
+
+.blog__userInfo {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid grey;
+    padding: 1rem;
+}
+
+.marginClass {
+    margin: 0px;
+}
+
+.userName {
+    padding: 0.2rem;
+}
+
+.blog__timestamp {
+    padding-left: 0.3rem;
+}
+
+.blog__userInput {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog__userInput>img {
+    height: 200px;
+}
+
+.blog__leftMargin {
+    margin-left: 1rem;
+}

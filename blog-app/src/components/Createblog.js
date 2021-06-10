@@ -1,17 +1,19 @@
 import React, {useState} from 'react';
 import "./Createblog.css";
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import { Avatar } from '@material-ui/core';
 
-function Createblog({image, title}) {
+function Createblog({profilePic, name}) {
 
-    const [input, setInput] = useState("");
+    const [input1, setInput1] = useState("");
+    const [input2, setInput2] = useState("");
     const [imageUrl, setImageUrl] = useState("");
 
     const handleOnClick = (event) => {
         event.preventDefault();
 
         setImageUrl("")
-        setInput("")
+        setInput1("")
+        setInput2("")
     }
 
     return (
@@ -20,16 +22,16 @@ function Createblog({image, title}) {
                 <h2>Create blog</h2>
             </div >
             <div className="createBlog__info">
-                <AccountCircleIcon src={image} className="createBlogInfo--icon" />
+                <Avatar src={profilePic} className="createBlogInfo--icon" />
                 <div className="createBlog__userInfo">
-                    <h4>{!title?"Guest":title}</h4>
-                    <button>Blog type</button>
+                    <h4>{!name?"Guest":name}</h4>
                 </div>
                 
             </div>
             <div>
                 <form className="createBlog__input">
-                    <textarea onClick={(e) => setInput(e.target.value)} className="input--blog" placeholder="Write your blog here..." required></textarea>
+                    <input onClick={(e) => setInput2(e.target.value)} placeholder="Enter title" />
+                    <textarea onClick={(e) => setInput1(e.target.value)} className="input--blog" placeholder="Write your blog here..." required></textarea>
                     <div className="createBlog__button">
                         <input onClick={(e) => setImageUrl(e.target.value)} placeholder="Add image URL (optional)" />
                         <button onClick={handleOnClick} className="button--input" type="submit">Post</button>

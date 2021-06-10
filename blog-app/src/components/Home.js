@@ -11,8 +11,6 @@ function Home() {
             < Leftsidebar />
 
             <Centerfeed />
-            
-            <Rightsidebar />
         </div>
     );
 }

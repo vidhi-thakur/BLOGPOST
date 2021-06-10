@@ -6,11 +6,12 @@ import CategoryIcon from '@material-ui/icons/Category';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import SearchIcon from '@material-ui/icons/Search';
-// import { useStateValue } from '../StateProvider';
+import { Avatar } from '@material-ui/core';
+import { useStateValue } from '../StateProvider';
 
 function Navbar() {
 
-    // const [ {user}, dispatch] = useStateValue();
+    const [ {user}, dispatch] = useStateValue();
 
     return (
         <header className="header"> 
@@ -33,7 +34,7 @@ function Navbar() {
                         <Link to="/notifications/"><NotificationsNoneIcon className="header__icons" /></Link>
                     </li>
                     <li className="header__lists">
-                        <Link to="/account/"><AccountCircleIcon className="header__icons" /></Link>
+                        <Link to="/account/"><Avatar src={user.photoURL} className="header__icons" /></Link>
                     </li>
                 </ul>
             </div>

@@ -111,3 +111,10 @@
         padding: 0px;
     }
 }
+
+
+.MuiAvatar-img {
+    border-radius: 999px;
+    font-size: small;
+    padding: 0.8rem;
+}
