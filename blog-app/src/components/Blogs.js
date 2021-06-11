@@ -22,3 +22,4 @@ function Blogs({profilePic, img, name, timestamp, title, input}) {
 }
 
 export default Blogs
+// {new Date(timestamp?.toDate()).toUTCString()}

@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import "./Createblog.css";
 import { Avatar } from '@material-ui/core';
-import firebase from "../firebase"
-import db from "../firebase"
+import db from "../firebase.js"
+import firebase from "firebase";
 import { useStateValue } from '../StateProvider';
 
 function Createblog() {
@@ -15,16 +15,15 @@ function Createblog() {
 
     const handleOnClick = (event) => {
         event.preventDefault();
-
         //clever db stuff
-        db.collection.add({
+        db.collection("blogs").add({
             imageUrl: imageUrl,
             inputTextarea: input,
             name: user.displayName,
             profilePic: user.photoURL,
-            // timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+            timestamp: firebase.firestore.FieldValue.serverTimestamp() || null,
             title: title,
-        });
+        })
 
         setImageUrl("")
         setInput("")
