@@ -47,7 +47,7 @@ function Createblog() {
                     <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Enter title" required />
                     <textarea value={input} onChange={(e) => setInput(e.target.value)} className="input--blog" placeholder="Write your blog here..." required></textarea>
                     <div className="createBlog__button">
-                        <input valur={imageUrl} onChange={(e) => setImageUrl(e.target.value)} placeholder="Add image URL (optional)" />
+                        <input value={imageUrl} onChange={(e) => setImageUrl(e.target.value)} placeholder="Add image URL (optional)" />
                         <button onClick={handleOnClick} className="button--input" type="submit">Post</button>
                     </div>
                 </form>
